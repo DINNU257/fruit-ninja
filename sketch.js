@@ -31,7 +31,7 @@ function setup(){
 
 function draw(){
   
-  background("lightblue")
+  background("lightgreen");
   sword.y =mouseY;
   sword.x =mouseX;
   text("Score= "+ score, 300,30);
@@ -49,7 +49,7 @@ function draw(){
     if(sword.isTouching(fruitGroup)){
       swordSong.play();
       fruitGroup.destroyEach();
-      score = score +2;
+      score = score +10;
     }
     
     if(sword.isTouching(enemyGroup)){
